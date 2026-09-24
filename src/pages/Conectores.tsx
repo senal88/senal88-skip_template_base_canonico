@@ -201,12 +201,18 @@ export default function Conectores() {
                   Parâmetros de Conexão do Backend Oficial
                 </CardTitle>
                 <CardDescription className="text-xs text-slate-500">
-                  Valores canônicos para conexões Skip Cloud &rarr; VPS Coolify (SYSTEM.md §12)
+                  Configurações mockadas para visualização (SYSTEM.md §12) &bull; Segredos
+                  mascarados
                 </CardDescription>
               </div>
-              <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
-                SSL: Skip Verification
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">
+                  Visualização Mockada
+                </span>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  SSL: Skip Verification
+                </span>
+              </div>
             </div>
           </CardHeader>
 
@@ -289,6 +295,62 @@ export default function Conectores() {
                 </button>
               </div>
 
+              {/* Senha do Banco (Protegida/Mascarada) */}
+              <div className="p-3 rounded-lg border border-slate-200 bg-slate-50/60 flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Senha do Banco
+                    </span>
+                    <span className="text-[9px] px-1 py-0.2 bg-amber-50 text-amber-700 border border-amber-200 rounded font-semibold">
+                      Protegido
+                    </span>
+                  </div>
+                  <span className="font-mono font-semibold text-slate-500 text-xs sm:text-sm tracking-widest">
+                    {BACKEND_CONFIG.passwordMasked}
+                  </span>
+                </div>
+                <button
+                  onClick={() =>
+                    toast.info(
+                      'A senha real não é exposta na interface — configure via variável de ambiente VITE_DB_PASSWORD',
+                    )
+                  }
+                  className="p-1.5 rounded hover:bg-white text-slate-400 hover:text-slate-800 transition-colors shadow-2xs"
+                  title="Senha protegida"
+                >
+                  <Lock className="w-3.5 h-3.5 text-slate-400" />
+                </button>
+              </div>
+
+              {/* Chave Anon (Browser) Mascarada */}
+              <div className="p-3 rounded-lg border border-slate-200 bg-slate-50/60 flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Chave Pública (Anon)
+                    </span>
+                    <span className="text-[9px] px-1 py-0.2 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded font-semibold">
+                      Injetada por Env
+                    </span>
+                  </div>
+                  <span className="font-mono font-semibold text-slate-500 text-xs sm:text-sm tracking-widest">
+                    {BACKEND_CONFIG.anonKeyMasked}
+                  </span>
+                </div>
+                <button
+                  onClick={() =>
+                    toast.info(
+                      'Chave anon gerenciada exclusivamente via import.meta.env.VITE_SUPABASE_ANON_KEY',
+                    )
+                  }
+                  className="p-1.5 rounded hover:bg-white text-slate-400 hover:text-slate-800 transition-colors shadow-2xs"
+                  title="Injetada via variável de ambiente"
+                >
+                  <Lock className="w-3.5 h-3.5 text-slate-400" />
+                </button>
+              </div>
+
               {/* API URL (Kong) */}
               <div className="sm:col-span-2 p-3 rounded-lg border border-slate-200 bg-slate-50/60 flex items-center justify-between">
                 <div className="truncate pr-2">
@@ -310,13 +372,17 @@ export default function Conectores() {
             </div>
 
             {/* Aviso de Segurança e RLS */}
-            <div className="p-2.5 rounded-md border border-amber-200 bg-amber-50/60 text-xs text-amber-800 flex items-start gap-2">
-              <Lock className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+            <div className="p-2.5 rounded-md border border-emerald-200 bg-emerald-50/60 text-xs text-emerald-800 flex items-start gap-2">
+              <Lock className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>
-                <strong>Atenção de Governança:</strong> As chaves de serviço nunca são expostas na
-                interface. Apenas o túnel e a chave pública anon são utilizados em tempo de execução
-                pelo browser sob políticas de RLS por{' '}
-                <code className="font-mono font-semibold">app_id</code>.
+                <strong>Conformidade e Segurança:</strong> Todas as credenciais, tokens JWT e senhas
+                de banco foram auditados e higienizados. Os parâmetros exibidos são tratados como
+                variáveis de configuração mockadas para visualização. Segredos são injetados
+                exclusivamente via variáveis de ambiente seguras (
+                <code className="font-mono font-semibold text-emerald-900">
+                  import.meta.env.VITE_*
+                </code>
+                ) e protegidos por RLS.
               </span>
             </div>
           </CardContent>

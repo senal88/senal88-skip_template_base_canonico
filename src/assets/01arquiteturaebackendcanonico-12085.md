@@ -9,7 +9,7 @@ Para todo e qualquer projeto desenvolvido ou prototipado no Skip com destino aos
 - **Stack Fixo:** Frontend concebido e exportado pelo Skip Cloud e publicado em `https://<id>.mfotrust.com`.
 - **Backend Oficial Único:** Supabase Self-Hosted hospedado no Coolify da VPS (`cprz78e8mogdugpyjwpe2maw`).
 - **Segregação Obrigatória:** Cada aplicação possui seu próprio schema isolado (`skip_<slug>`). O schema `public` nunca é utilizado para dados de produto.
-- **Segurança e RLS:** Row Level Security (RLS) mandatório com membership por app; chave `anon` restrita ao browser; chave `service_role` somente em server-side/BFF.
+- **Segurança e RLS:** Row Level Security (RLS) mandatório com membership por app; chave pública (`anon`) restrita ao browser; chave de servidor somente em server-side/BFF.
 - **Buckets de Armazenamento:** Criados no padrão `<schema>-public` e `<schema>-private`.
 - **Eliminação de Legados:** Supabase Cloud Free permanece congelado e em eliminação. Directus + PostgreSQL atua exclusivamente como MDM, backoffice humano e console de dados complexos/fiduciários.
 
@@ -23,12 +23,12 @@ Para todo e qualquer projeto desenvolvido ou prototipado no Skip com destino aos
 - **Port:** `54322`
 - **Database:** `postgres`
 - **Username:** `postgres`
-- **Password:** `4f1731a179e4bdfaefe1ffb248252b7d37749c8a1b487e37`
+- **Password:** `••••••••` _(injetada via secret seguro de ambiente / VITE_DB_PASSWORD)_
 - **API URL (Kong):** `https://supabase.senamfo.com.br`
 - **SSL Mode:** `Skip Verification` (ou desabilitado conforme conector)
 - **Retrieve All Schemas:** `Yes`
-- **Chave Anon (Browser):** `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzkwMDQ2NjYyLCJleHAiOjIxMDU0MDY2NjJ9.-ySeke2BnnLKKfmbmYCesT9bbhKK8esjtyUchSJSQOY`
-- **Chave Service Role (Server):** `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaXNzIjoic3VwYWJhc2UiLCJpYXQiOjE3OTAwNDY2NjIsImV4cCI6MjEwNTQwNjY2Mn0.iHT11owCPchBAzdZOLVyMnwbtjfNN8Jmg80ilIG5Lqw`
+- **Chave Anon (Browser):** `••••••••` _(lida exclusivamente via `import.meta.env.VITE_SUPABASE_ANON_KEY`)_
+- **Chave de Servidor / BFF:** `••••••••` _(restrita exclusivamente ao servidor/BFF via secret seguro; nunca exposta ao cliente)_
 
 ### Desenvolvimento / Local
 

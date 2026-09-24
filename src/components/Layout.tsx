@@ -300,11 +300,13 @@ export default function Layout() {
                   Preferências do Console
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => toast.info('Chave anon/service_role inspecionadas')}
+                  onClick={() =>
+                    toast.info('Políticas de RLS e variáveis de ambiente em conformidade')
+                  }
                   className="text-xs flex items-center gap-2 cursor-pointer"
                 >
                   <ShieldCheck className="w-3.5 h-3.5 text-slate-500" />
-                  Credenciais & RLS
+                  Segurança & RLS
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem

@@ -629,14 +629,17 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
   },
 ]
 
+// Parâmetros de infraestrutura do Data Plane lidos via import.meta.env (com fallback neutro mockado para visualização)
 export const BACKEND_CONFIG = {
-  host: 'supabase.senamfo.com.br',
-  port: '54322',
-  database: 'postgres',
-  username: 'postgres',
+  host: (import.meta.env?.VITE_SUPABASE_HOST as string) || 'supabase.senamfo.com.br',
+  port: (import.meta.env?.VITE_SUPABASE_PORT as string) || '54322',
+  database: (import.meta.env?.VITE_SUPABASE_DB as string) || 'postgres',
+  username: (import.meta.env?.VITE_SUPABASE_USER as string) || 'postgres',
+  passwordMasked: '••••••••',
+  anonKeyMasked: '••••••••',
   sslMode: 'Skip Verification',
-  apiUrlKong: 'https://supabase.senamfo.com.br',
-  coolifyVpsId: 'cprz78e8mogdugpyjwpe2maw',
+  apiUrlKong: (import.meta.env?.VITE_SUPABASE_URL as string) || 'https://supabase.senamfo.com.br',
+  coolifyVpsId: (import.meta.env?.VITE_COOLIFY_VPS_ID as string) || 'cprz78e8mogdugpyjwpe2maw',
   productionDomainPattern: 'https://<id>.mfotrust.com',
   githubSSOT: 'git@github.com:senal88/glob_00_prompts.git',
   githubPipeline: 'git@github.com:senal88/glob_00_skip.git',
