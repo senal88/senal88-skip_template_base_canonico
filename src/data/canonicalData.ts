@@ -62,6 +62,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Cockpit financeiro consolidado com conciliação contábil e extratos bancários.',
     tabelasEstimadas: 14,
     registrosEstimados: 84200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=financial%20dashboard%20charts',
     buckets: {
       public: 'skip_dashboard_financeir-public',
       private: 'skip_dashboard_financeir-private',
@@ -80,6 +81,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Consolidador de carteiras de investimento e posições custodiadas no BTG Pactual.',
     tabelasEstimadas: 18,
     registrosEstimados: 142300,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=investment%20portfolio%20banking',
     buckets: {
       public: 'skip_app_financeiro_prd-public',
       private: 'skip_app_financeiro_prd-private',
@@ -99,6 +101,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Template modular operacional para fluxos de caixa e agregação bancária Open Finance.',
     tabelasEstimadas: 9,
     registrosEstimados: 4800,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=fintech%20operating%20system',
     buckets: { public: 'skip_financial_os-public', private: 'skip_financial_os-private' },
   },
   {
@@ -114,6 +117,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Microserviço de conciliação de aportes e resgates fiduciários.',
     tabelasEstimadas: 11,
     registrosEstimados: 31200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=treasury%20cashflow%20ledger',
     buckets: { public: 'skip_finance-public', private: 'skip_finance-private' },
   },
   {
@@ -129,6 +133,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Base processual, prazos judiciais e contratos de honorários advocatícios.',
     tabelasEstimadas: 16,
     registrosEstimados: 19400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=legal%20law%20firm%20management',
     buckets: {
       public: 'skip_template_erp_jurid-public',
       private: 'skip_template_erp_jurid-private',
@@ -147,6 +152,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Simulador fiscal e conformidade da tributação de dividendos sob a Lei 15.270/2025.',
     tabelasEstimadas: 12,
     registrosEstimados: 67300,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=tax%20simulation%20audit',
     buckets: {
       public: 'skip_nova_tributacao_de-public',
       private: 'skip_nova_tributacao_de-private',
@@ -166,6 +172,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Portal core para governança de famílias ultra-high-net-worth e estruturas offshore.',
     tabelasEstimadas: 24,
     registrosEstimados: 310500,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=family%20office%20wealth',
     buckets: {
       public: 'skip_familyofficeplataf-public',
       private: 'skip_familyofficeplataf-private',
@@ -184,6 +191,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Gestão multi-tenant de galpões, imóveis comerciais e laudos de avaliação técnica.',
     tabelasEstimadas: 15,
     registrosEstimados: 42100,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=real%20estate%20analytics',
     buckets: {
       public: 'skip_dashboard_imobiliar-public',
       private: 'skip_dashboard_imobiliar-private',
@@ -202,6 +210,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Gateway de webhooks e conectores com Banco Inter, Itaú BBA e BTG Pactual.',
     tabelasEstimadas: 10,
     registrosEstimados: 98400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=api%20gateway%20connectivity',
     buckets: {
       public: 'skip_modulo_de_integrac-public',
       private: 'skip_modulo_de_integrac-private',
@@ -220,6 +229,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Motor central de dossiês fiduciários, holdings familiares e atas de assembleia.',
     tabelasEstimadas: 22,
     registrosEstimados: 189000,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=wealth%20governance%20dossier',
     buckets: {
       public: 'skip_sistema_multi_fami-public',
       private: 'skip_sistema_multi_fami-private',
@@ -239,6 +249,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Planejamento sucessório, inventários extrajudiciais e alíquotas estaduais de ITCMD.',
     tabelasEstimadas: 13,
     registrosEstimados: 15400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=inheritance%20estate%20planning',
     buckets: {
       public: 'skip_sucessao_inventari-public',
       private: 'skip_sucessao_inventari-private',
@@ -258,6 +269,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Laudos periciais e avaliações mercadológicas de imóveis conforme normas ABNT NBR 14653.',
     tabelasEstimadas: 11,
     registrosEstimados: 23600,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=property%20appraisal%20architecture',
     buckets: {
       public: 'skip_avaliacao_imobiliar-public',
       private: 'skip_avaliacao_imobiliar-private',
@@ -277,6 +289,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Ambiente de testes sistemáticos de prompt, versionamento semântico e few-shot evals.',
     tabelasEstimadas: 8,
     registrosEstimados: 54100,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=prompt%20engineering%20ai',
     buckets: {
       public: 'skip_prompt_engineering-public',
       private: 'skip_prompt_engineering-private',
@@ -295,6 +308,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Snapshot experimental para benchmark de prompts de raciocínio profundo.',
     tabelasEstimadas: 8,
     registrosEstimados: 12200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=ai%20testing%20lab',
     buckets: {
       public: 'skip_prompt_engineering-public',
       private: 'skip_prompt_engineering-private',
@@ -313,6 +327,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Refinador autônomo de instruções de sistema com metaprompts da Anthropic e OpenAI.',
     tabelasEstimadas: 7,
     registrosEstimados: 31900,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=metaprompt%20refinement%20code',
     buckets: {
       public: 'skip_glob_00_prompt_imp-public',
       private: 'skip_glob_00_prompt_imp-private',
@@ -332,6 +347,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Esteira de geração autônoma de código, validação estática e orquestração de testes.',
     tabelasEstimadas: 17,
     registrosEstimados: 76400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=code%20generation%20terminal',
     buckets: {
       public: 'skip_proj_00_agentic_bu-public',
       private: 'skip_proj_00_agentic_bu-private',
@@ -351,6 +367,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Boilerplate de agentes de suporte e workflows corporativos para aceleração de MVPs.',
     tabelasEstimadas: 6,
     registrosEstimados: 7200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=ai%20workflow%20automation',
     buckets: {
       public: 'skip_template_inteligen-public',
       private: 'skip_template_inteligen-private',
@@ -370,6 +387,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'BFF operacional de alto desempenho integrando serviços internos e consoles fiduciários.',
     tabelasEstimadas: 25,
     registrosEstimados: 412000,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=microservices%20server%20cluster',
     buckets: { public: 'skip_smarthub_ii-public', private: 'skip_smarthub_ii-private' },
   },
   {
@@ -385,6 +403,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Ambiente de staging para testes de ingestão de transcrições de vídeos de YouTube.',
     tabelasEstimadas: 9,
     registrosEstimados: 9400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=video%20transcription%20staging',
     buckets: { public: 'skip_linkedin_youtube-public', private: 'skip_linkedin_youtube-private' },
   },
   {
@@ -401,6 +420,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Pipeline de geração de carrosséis e artigos a partir de vídeos de educação financeira.',
     tabelasEstimadas: 12,
     registrosEstimados: 63200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=social%20media%20content%20strategy',
     buckets: { public: 'skip_linkedin_youtube-public', private: 'skip_linkedin_youtube-private' },
   },
   {
@@ -417,6 +437,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Central omnichannel com orquestração de instâncias Evolution API e agentes Chatwoot.',
     tabelasEstimadas: 19,
     registrosEstimados: 254000,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=whatsapp%20omnichannel%20messaging',
     buckets: {
       public: 'skip_plataforma_whatsap-public',
       private: 'skip_plataforma_whatsap-private',
@@ -435,6 +456,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Camada de personalização de interface e visualização de ativos sob custódia BTG.',
     tabelasEstimadas: 14,
     registrosEstimados: 88900,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=digital%20banking%20interface',
     buckets: {
       public: 'skip_experiencia_digita-public',
       private: 'skip_experiencia_digita-private',
@@ -454,6 +476,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Consolidador master institucional com visão integrada de contas de clientes fiduciários.',
     tabelasEstimadas: 21,
     registrosEstimados: 390100,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=institutional%20asset%20management',
     buckets: {
       public: 'skip_plataforma_btg_mul-public',
       private: 'skip_plataforma_btg_mul-private',
@@ -472,6 +495,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Plataforma oficial da marca SENAMFO e portal de clientes fiduciários.',
     tabelasEstimadas: 16,
     registrosEstimados: 128400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=luxury%20finance%20headquarters',
     buckets: { public: 'skip_senamfo-public', private: 'skip_senamfo-private' },
   },
   {
@@ -487,6 +511,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Ambiente educacional de simulados e métricas para certificação CFP®.',
     tabelasEstimadas: 13,
     registrosEstimados: 51200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=financial%20education%20exam',
     buckets: {
       public: 'skip_plataforma_prepara-public',
       private: 'skip_plataforma_prepara-private',
@@ -505,6 +530,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Template de timeline pessoal de saúde e exames pré-natais.',
     tabelasEstimadas: 5,
     registrosEstimados: 2300,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=health%20calendar%20timeline',
     buckets: {
       public: 'skip_acompanhamento_ges-public',
       private: 'skip_acompanhamento_ges-private',
@@ -523,6 +549,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Agente autônomo com triagem inteligente e agendamento via WhatsApp corporativo.',
     tabelasEstimadas: 15,
     registrosEstimados: 172900,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=ai%20chatbot%20messaging',
     buckets: {
       public: 'skip_atendimento_no_wha-public',
       private: 'skip_atendimento_no_wha-private',
@@ -541,6 +568,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Interface de chat multimodal com suporte ao Model Context Protocol (MCP).',
     tabelasEstimadas: 11,
     registrosEstimados: 48600,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=conversational%20ai%20interface',
     buckets: {
       public: 'skip_interface_para_age-public',
       private: 'skip_interface_para_age-private',
@@ -559,6 +587,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Microserviço de ingestão de leads imobiliários e integração com CRMs parceiros.',
     tabelasEstimadas: 9,
     registrosEstimados: 35100,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=property%20listing%20portal',
     buckets: { public: 'skip_imobiliaria_api-public', private: 'skip_imobiliaria_api-private' },
   },
   {
@@ -575,6 +604,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Calculadora comparativa Lucro Real vs Presumido vs IBS/CBS sob a Reforma Tributária.',
     tabelasEstimadas: 14,
     registrosEstimados: 81400,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=corporate%20tax%20calculator',
     buckets: {
       public: 'skip_simulador_tributar-public',
       private: 'skip_simulador_tributar-private',
@@ -593,6 +623,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
     descricao: 'Torre de controle de roteamento dinâmico de prompts entre especialistas LLM.',
     tabelasEstimadas: 20,
     registrosEstimados: 164000,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=ai%20network%20control%20room',
     buckets: { public: 'skip_moe_control_tower-public', private: 'skip_moe_control_tower-private' },
   },
   {
@@ -609,6 +640,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Extrator diário de rendimentos de fundos e notas de corretagem da Genial Investimentos.',
     tabelasEstimadas: 10,
     registrosEstimados: 44200,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=stock%20market%20dividends%20yield',
     buckets: { public: 'skip_rendimento_genial-public', private: 'skip_rendimento_genial-private' },
   },
   {
@@ -625,6 +657,7 @@ export const CANONICAL_PROJECTS: ProjectCanonical[] = [
       'Mecanismo de consolidação de informes de rendimentos e preenchimento assistido de IRPF.',
     tabelasEstimadas: 18,
     registrosEstimados: 112500,
+    screenshotUrl: 'https://img.usecurling.com/p/640/360?q=income%20tax%20return%20document',
     buckets: { public: 'skip_irpf_2026_2025-public', private: 'skip_irpf_2026_2025-private' },
   },
 ]

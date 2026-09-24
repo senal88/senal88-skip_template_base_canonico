@@ -18,6 +18,7 @@ import {
   User,
   LogOut,
   Sliders,
+  Terminal,
 } from 'lucide-react'
 import { DOMAINS } from '@/data/canonicalData'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
@@ -72,6 +73,8 @@ export default function Layout() {
       }
     } else if (path.startsWith('/conectores')) {
       crumbs.push({ label: 'Conectores & Data Plane', path: '/conectores' })
+    } else if (path.startsWith('/terminal')) {
+      crumbs.push({ label: 'Terminal & PromptOps', path: '/terminal' })
     } else if (path.startsWith('/esteira')) {
       crumbs.push({ label: 'Esteira de Intake/Exports', path: '/esteira' })
     } else if (path.startsWith('/biblioteca')) {
@@ -104,6 +107,13 @@ export default function Layout() {
       shortLabel: 'Conectores',
       icon: Database,
       badge: '54322',
+    },
+    {
+      to: '/terminal',
+      label: 'Terminal & PromptOps',
+      shortLabel: 'Terminal',
+      icon: Terminal,
+      badge: 'CLI',
     },
     {
       to: '/esteira',

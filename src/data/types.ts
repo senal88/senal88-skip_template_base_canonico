@@ -19,6 +19,7 @@ export interface ProjectCanonical {
     public: string
     private: string
   }
+  screenshotUrl?: string
 }
 
 export interface DomainMeta {

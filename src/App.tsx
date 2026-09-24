@@ -8,6 +8,7 @@ import Inventario from './pages/Inventario'
 import Conectores from './pages/Conectores'
 import Esteira from './pages/Esteira'
 import Biblioteca from './pages/Biblioteca'
+import TerminalOps from './pages/TerminalOps'
 import NotFound from './pages/NotFound'
 import Layout from './components/Layout'
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/inventario" element={<Inventario />} />
           <Route path="/conectores" element={<Conectores />} />
+          <Route path="/terminal" element={<TerminalOps />} />
           <Route path="/esteira" element={<Esteira />} />
           <Route path="/biblioteca" element={<Biblioteca />} />
         </Route>
